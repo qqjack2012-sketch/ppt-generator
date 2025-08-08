@@ -11,6 +11,9 @@
 - 📱 **响应式设计**: 完美适配桌面端和移动端
 - ⚡ **实时状态**: 显示生成进度和结果状态
 - 🔗 **下载链接**: 生成成功后提供直接下载链接
+- 🏠 **现代化首页**: 专业的营销页面设计
+- 💰 **价格页面**: 完整的定价方案展示
+- 📱 **移动端优化**: 专门的移动端导航组件
 
 ## 技术栈
 
@@ -29,14 +32,21 @@ ppt-generator/
 │   ├── api/                      # API 路由
 │   │   ├── generate-ppt/         # PPT 生成 API
 │   │   └── download/[filename]/  # 文件下载 API
+│   ├── home/                     # 首页
+│   │   └── page.tsx              # 现代化首页设计
+│   ├── generator/                # PPT 生成器
+│   │   └── page.tsx              # 生成器主页面
+│   ├── pricing/                  # 价格页面
+│   │   └── page.tsx              # 定价方案页面
 │   ├── globals.css               # 全局样式
 │   ├── layout.tsx                # 根布局
-│   └── page.tsx                  # 主页面
+│   └── page.tsx                  # 主页面（重定向）
 ├── components/                   # React 组件
 │   ├── FileUpload.tsx           # 文件上传组件
 │   ├── TextInput.tsx            # 文本输入组件
 │   ├── TemplateSelector.tsx     # 模板选择组件
-│   └── StatusIndicator.tsx      # 状态指示器组件
+│   ├── StatusIndicator.tsx      # 状态指示器组件
+│   └── MobileNav.tsx            # 移动端导航组件
 ├── hooks/                       # 自定义 Hooks
 │   └── usePPTGenerator.ts       # PPT 生成状态管理
 ├── lib/                         # 工具库
@@ -73,6 +83,12 @@ ppt-generator/
 - 动态图标和颜色
 - 下载链接集成
 - 用户友好的消息提示
+
+### 5. MobileNav 组件
+- 移动端汉堡菜单
+- 响应式导航设计
+- 平滑的展开/收起动画
+- 触摸友好的交互体验
 
 ## 启动方法
 
