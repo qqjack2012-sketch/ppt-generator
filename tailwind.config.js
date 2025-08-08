@@ -1,23 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-      "./pages/**/*.{ts,tsx}",
-      "./components/**/*.{ts,tsx}"
-    ],
-    theme: {
-        extend: {
-            colors: {
-              brand: {
-                light: '#e0f2ff',
-                DEFAULT: '#3b82f6',
-                dark: '#1e40af',
-              },
-            },
-            fontFamily: {
-              sans: ['"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-            },
-          },
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#eff6ff',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+        },
+      },
     },
-    plugins: [],
-  }
-  
+  },
+  plugins: [],
+} 
